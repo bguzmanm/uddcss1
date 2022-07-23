@@ -1,0 +1,59 @@
+body {
+    background-image: url(/img/fondo.jpg);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.contenedor{
+
+    position: relative;
+    top: 100px;
+    left: 40px;
+    display: block;    
+    width: 100%;
+    height: 100%;
+    background-color:aquamarine;
+}
+
+.bloqueRojo {
+    position: sticky;
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+    z-index: 10;
+}
+
+.bloqueAzul {
+    position: fixed;
+    width: 120px;
+    height: 75px;
+    background-color: #0000ff;
+    z-index: 8;
+}
+.bloqueVerde {
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    width: 60px;
+    height: 130px;
+    background-color: #008000;
+    z-index: 1;
+}
+
+@media screen and (max-width: 500px) {
+    .bloqueVerde {
+        visibility: hidden;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .bloqueVerde{
+        top: 0;
+        left: 30px;
+        z-index: 20;
+    }
+}
+
